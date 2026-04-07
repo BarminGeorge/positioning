@@ -126,6 +126,7 @@
     line-height: 1.5;
 }
 
+/* 3. Progress Bar */
 .progress-bar-wrapper {
     margin: 20px 0;
 }
@@ -147,6 +148,7 @@
     height: 100%;
     background-color: #e00;
     overflow: hidden;
+    z-index: 2;
 }
 
 .progress-bar__text {
@@ -166,6 +168,7 @@
 
 .progress-bar__text--dark {
     color: #000;
+    z-index: 1;
 }
 
 .progress-bar__text--light {
@@ -173,5 +176,5 @@
 }
 
 .progress-bar__fill .progress-bar__text--light {
-    width: 580px;
+    width: 100%;
 }
