@@ -95,6 +95,7 @@
     width: 640px;
     max-height: 90vh;
     overflow-y: auto;
+    overflow-x: hidden;
     background-color: #fff;
     border-radius: 6px;
     padding: 30px;
@@ -205,6 +206,7 @@
     align-items: center;
     gap: 10px;
     width: 100%;
+    box-sizing: border-box;
     padding: 14px 16px;
     font-weight: 600;
     cursor: pointer;
