@@ -178,3 +178,59 @@
 .progress-bar__fill .progress-bar__text--light {
     width: 100%;
 }
+
+/* 5. Accordion */
+.accordion {
+    margin-top: 24px;
+}
+
+.accordion__item {
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    background-color: #fafafa;
+}
+
+.accordion__item + .accordion__item {
+    margin-top: 10px;
+}
+
+.accordion__checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.accordion__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 14px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+.accordion__arrow {
+    transition: transform 0.25s ease;
+}
+
+.accordion__body {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 16px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.accordion__body p {
+    margin: 0;
+}
+
+.accordion__checkbox:checked + .accordion__header .accordion__arrow {
+    transform: rotate(90deg);
+}
+
+.accordion__checkbox:checked + .accordion__header + .accordion__body {
+    max-height: 220px;
+    padding: 0 16px 14px;
+}
